@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25"
+  },
   "dependencies": {
     "design-system": "^1.0.0"
   }
