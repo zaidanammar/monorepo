@@ -8,8 +8,8 @@ const Index = () => {
   };
 
   return (
-    <div className="titleWrapper">
-      <div className="textStyle">Welcome to Admin</div>
+    <div>
+      <div className="text-xl-medium">Welcome to Outlet</div>
 
       <Button onClick={handleClick}>
         Next page
