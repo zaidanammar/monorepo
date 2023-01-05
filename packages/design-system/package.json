@@ -13,9 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "primereact": "^8.7.3"
-  },
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "@storybook/addon-actions": "^6.5.15",

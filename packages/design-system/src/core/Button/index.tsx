@@ -1,12 +1,8 @@
 import React, { ReactNode } from "react";
-import {
-  Button as PrimeButton,
-  ButtonProps as PrimeButtonProps,
-} from "primereact/button";
 
 export type ButtonVariantTypes = "primary" | "secondary";
 export type ButtonSizeTypes = "xl" | "l" | "m" | "xs";
-interface ButtonProps extends PrimeButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   size?: ButtonSizeTypes;
   variant?: ButtonVariantTypes;
@@ -19,8 +15,8 @@ export const Button = ({
   size = "l",
   variant = "primary",
   fullWidth = false,
-  className,
   disabled = false,
+  className,
   ...buttonProps
 }: ButtonProps) => {
   const variantProperties: {
@@ -45,9 +41,11 @@ export const Button = ({
       onClick={onClick}
       className={`${variantProperties[variant]} ${sizeProperties[size]} ${
         fullWidth ? "w-full" : "w-fit"
-      } ${
-        disabled && "bg-neutral-700 text-neutral-300 cursor-not-allowed hover:bg-opacity-100"
-      } + cursor-pointer text-center text text-l-bold border-0 hover:bg-opacity-80 `}
+      } ${className} ${
+        disabled
+          ? "bg-neutral-700 text-neutral-300 cursor-not-allowed hover:bg-opacity-100"
+          : ""
+      }cursor-pointer text-center text-l-bold border-0 hover:bg-opacity-80`}
       {...buttonProps}
     >
       {children}

@@ -8,8 +8,8 @@ const NextPage = () => {
   };
 
   return (
-    <div className="titleWrapper">
-      <div className="textStyle">This is Admin Next Page.</div>
+    <div>
+      <div>This is Admin Next Page.</div>
       <Button onClick={handleClick}>Home Page</Button>
     </div>
   );

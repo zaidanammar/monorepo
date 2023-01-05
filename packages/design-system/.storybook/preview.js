@@ -1,5 +1,5 @@
-import "primereact/resources/themes/tailwind-light/theme.css";
-import "primereact/resources/primereact.min.css";
+// import "primereact/resources/themes/tailwind-light/theme.css";
+// import "primereact/resources/primereact.min.css";
 import '../src/styles/index.css';
 
 export const parameters = {

@@ -8,10 +8,10 @@ const Index = () => {
   };
 
   return (
-    <div>
-      <div className="text-xl-medium">Welcome to Outlet</div>
+    <div className="p-6">
+      <div className="text-xl-bold">Welcome to Outlet</div>
 
-      <Button onClick={handleClick}>
+      <Button size="xl" variant="primary" className="mt-4" onClick={handleClick}>
         Next page
       </Button>
     </div>
